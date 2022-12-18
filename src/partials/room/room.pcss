@@ -1,0 +1,64 @@
+.room {
+    position: relative;
+    display: flex;
+    padding: 12px 10px;
+    border-top: 1px solid $smoky-gray;
+    cursor: pointer;
+
+    &:last-child {
+        border-bottom: 1px solid $smoky-gray;
+    }
+    &:hover {
+        background-color: $blue-alice;
+    }
+
+    &__avatar {
+        width: 47px;
+        height: 47px;
+        background-color: $smoky-white-dark;
+        border-radius: 100%;
+        display: flex;
+        align-self: center;
+    }
+    &__info {
+        flex: 1;
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    &__name {
+        color: $dark-gray;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    &__last-message {
+        color: $base-gray;
+    }
+    &__sender-you {
+        color: $dark-gray;
+    }
+    &__count-unread {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        bottom: 12px;
+        right: 10px;
+        background-color: $blue-base;
+        color: $white;
+        border-radius: 100%;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__time {
+        font-size: 9px;
+        color: $base-gray;
+    }
+
+    &__choosed {
+        background-color: $blue-alice;
+    }
+}

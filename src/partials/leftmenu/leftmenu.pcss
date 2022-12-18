@@ -1,0 +1,33 @@
+.leftmenu {
+    width: 310px;
+    height: 100%;
+    background-color: #FBFBFB;
+    border-right: 1px solid #EAEAEA; 
+}
+.link {
+    display: flex;
+    justify-content: end;
+
+    a {
+        color: $base-gray;
+        outline: none;
+        text-decoration: none;
+        padding: 21px 10px;
+        font-size: 12px;
+
+        &:after{
+            content:  url("./assets/img/arrow_right.svg");
+            display: inline-block;
+            width: 8px;
+            height: 4px;
+            padding-left: 8px;
+            position: relative;
+            top: 1px;
+        }
+
+        :visited {
+            color: $base-gray;
+        }
+        
+    }
+}
