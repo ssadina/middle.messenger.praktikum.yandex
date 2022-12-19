@@ -1,0 +1,17 @@
+<div class="box">
+    <h1>Вход</h1>
+    <form>
+        <div class="form__column">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login" value="ivanivanov" required/>
+        </div>
+        <div class="form__column">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" value="ivanivanov" required/>
+        </div>
+    </form>
+    <div class="buttons">
+      {{> "button/button" label='Авторизоваться'}}
+      <a href="../../pages/signUp/signUp.hbs" class="link">Нет аккаунта?</a>
+    </div>
+</div>

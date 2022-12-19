@@ -1,0 +1,37 @@
+<div class="box">
+    <h1>Регистрация</h1>
+    <form>
+        <div class="form__column">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" value="pochta@yandex.ru" required/>
+        </div>
+        <div class="form__column">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login" value="ivanivanov" required/>
+        </div>
+        <div class="form__column">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" value="Иван" required/>
+        </div>
+        <div class="form__column">
+            <label for="lname">Фамилия</label> 
+            <input type="text" name="LastName" id="lname" value="Иванов"/>
+        </div>
+        <div class="form__column">
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone" id="phone" value="+7 (909) 967 30 30"/>
+        </div>
+        <div class="form__column">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" value="ivanivanov" required/>
+        </div>
+        <div class="form__column">
+            <label for="password">Пароль (еще раз)</label>
+            <input type="password" name="password" id="password" value="ivanivanov" required/>
+        </div>
+    </form>
+    <div class="buttons">
+      {{> "button/button" label='Зарегистрироваться'}}
+      <a href="../../pages/login/login.hbs" class="link">Войти</a>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.chat-header {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* height: max-content; */
+    /* flex: 1; */
+    border-bottom: 1px solid $smoky-gray;
+
+    &__avatar {
+        width: 34px;
+        height: 34px;
+        background-color: $smoky-white-dark;
+        border-radius: 100%;
+    }
+    &__name {
+        position: relative;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 600;
+        color: $dark-gray;
+        padding: 0 10px;
+        flex: 1;
+    }
+    &__menu {
+        background-color: $smoky-white-V1;
+        background:  $smoky-white-V1 url(./assets/img/dots.svg) center center no-repeat;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+}
