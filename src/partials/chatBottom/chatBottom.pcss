@@ -1,0 +1,36 @@
+.bottom {
+    display: flex;
+    border-top: 1px solid $smoky-gray;
+    padding: 11px 0;
+
+    form {
+        display: flex;
+        flex: 1;
+    }
+    .input {
+        @mixin input;
+        border-radius: 30px;
+        font-size: 12px;
+        padding-left: 20px;
+
+    }
+    &__attach {
+        position: relative;
+        cursor: pointer;
+    }
+    &__message {
+        margin: 0 10px;
+    }
+    &__enter {
+        display: flex;
+        flex: 1;
+    }
+    &__send {
+        background: $blue-base url(./assets/img/arrow.png) no-repeat center center;
+        width: 28px;
+        height: 28px;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+}
